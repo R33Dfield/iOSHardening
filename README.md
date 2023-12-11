@@ -27,20 +27,33 @@ It's important to note that the settings catalog in Intune does not cover all th
 * Create a new config policy using profile type "Templates" > template name "Custom" > import the .mobileconfig file.
 * Apply Settings: Deploy these settings across your iOS/iPadOS 17.0 Sonoma clients to enforce a robust security framework.
 
+### Additional Recommendations
+The additional recommendations provided by the Center for Internet Security (CIS) are important to consider, but it's crucial to note that these recommendations cannot be configured directly through a configuration profile or the settings catalog in Microsoft Intune. This means that while they are recommended for enhancing the security and management of iOS devices, they cannot be implemented or enforced through the standard Intune management interfaces. To adhere to these CIS recommendations, organizations might need to employ alternative methods or additional tools outside of Intune's configuration profile and settings catalog. This could involve manual configuration, the use of third-party software, or specific administrative procedures that go beyond the capabilities of Intune's standard device management features.
+
+4.1 Privacy & Security</br>
+  4.1.1 (L1) Review Manage Sharing & Access (Manual)</br>
+  4.1.2 (L2) Review Emergency Reset (Manual)</br>
+  4.1.3 (L2) Review Lockdown Mode (Manual)</br>
+  4.1.4 (L2) Ensure "App Privacy Report" is enabled (Manual)</br>
+  4.2 (L1) Ensure device is not obviously jailbroken or compromised (Manual)</br>
+  4.3 (L1) Ensure "Install iOS Updates" of "Automatic Updates" is set to "Enabled" (Manual)</br>
+  4.4 (L1) Ensure "Software Update" returns "Your software is up to date." (Manual)</br>
+  4.9 (L2) Ensure the latest iOS device architecture is used by high-value targets (Manual)</br>
+
 ### Why CIS Benchmarks?
-CIS Benchmarks are globally recognized as a gold standard for securing IT systems and data against cyber threats. By aligning the hardening files with these benchmarks, as much as possible, this provides you with a trustworthy and effective way to harden your iOS/iPadOS 17.0 environments against vulnerabilities. The free available PDF files and NIST repo have been a source for building the Intune configuration files.
+CIS Benchmarks are globally recognized as a gold standard for securing IT systems and data against cyber threats. By aligning the hardening files with these benchmarks, as much as possible, this provides you with a trustworthy and effective way to harden your iOS/iPadOS 17.0 environments against vulnerabilities. The free available PDF files have been a source for building the Intune configuration files.
 
 ### Create your own baseline for iOS/iPadOS 17.0?
 Check out [Apple Configurator](https://support.apple.com/apple-configurator)
 
 ## Contribution
-Feel free to contribute, suggest improvements, or report issues. Your input is valuable in making "iOS/iPadOS 17.0Hardening" a robust and community-driven tool for Apple iOS/iPadOS 17.0 security.
+Feel free to contribute, suggest improvements, or report issues. Your input is valuable in making "iOS/iPadOS 17.0 Hardening" a robust and community-driven tool for Apple iOS/iPadOS 17.0 security.
 
 ## Stay Secure
 Remember, security is an ongoing journey, not a destination. Keep your systems updated and regularly check back for the latest hardening files.
 
 ## Disclaimer
-Before using the configurations in the "iOS/iPadOS 17.0Hardening" repository for Apple iOS/iPadOS 17.0 17, please test them thoroughly in your environment. Adjustments may be needed to meet your organization's specific security and operational needs. Deployment in a production environment is at your own responsibility.
+Before using the configurations in the "iOS/iPadOS 17.0 Hardening" repository, please test them thoroughly in your environment. Adjustments may be needed to meet your organization's specific security and operational needs. Deployment in a production environment is at your own responsibility.
 
 ## Reference
 https://www.cisecurity.org/benchmark/apple_ios
